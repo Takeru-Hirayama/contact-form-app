@@ -13,4 +13,9 @@ class Tag extends Model
     {
         return $this->belongsToMany(Contact::class);
     }
+
+    // 追加する箇所
+    protected $fillable = [
+        'name',
+    ];
 }
