@@ -53,4 +53,14 @@ class AdminController extends Controller
     
         return view('admin.show', compact('contact'));
     }
+
+    public function destroy($id)
+    {
+        // お問い合わせを取得して削除
+        $contact = Contact::findOrFail($id);
+        $contact->delete();
+
+        // 一覧へリダイレクト
+        return redirect('/admin')->with('success', 'お問い合わせを削除しました');
+    }
 }

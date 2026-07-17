@@ -25,4 +25,5 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/admin/tags/{tag}', [TagController::class, 'update']);
     Route::get('/admin/contacts/{id}', [AdminController::class, 'show']);
     Route::delete('/admin/tags/{tag}', [TagController::class, 'destroy']);
+    Route::delete('/admin/contacts/{id}', [AdminController::class, 'destroy']);
 });
