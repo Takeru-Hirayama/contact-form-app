@@ -12,7 +12,7 @@
 1. リポジトリをクローン
 
 ```
-git clone XXXXXXXXXXXXXXXX
+git clone git@github.com:Takeru-Hirayama/contact-form-app.git
 ```
 
 2. .envファイルの準備
@@ -87,9 +87,11 @@ DELETE	　　/api/v1/contacts/{contact}	　　　お問い合わせ削除	　　
 ```
 ## 開発環境URL
 ```
-
+一般ユーザ向け：http://localhost/
+管理者向け：http://localhost/admin
+phpMyAdmin：http://localhost:8080/
 ```
 ## 作成者
 ```
 平山健
-```
+```git
